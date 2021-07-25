@@ -1,0 +1,44 @@
+
+/*Fontes*/
+$fontFamilyPrimary: 'Montserrat', sans-serif;
+$fontFamilySecondary: 'Bebas Neue', cursive;
+$fontFamilyTertiary: 'Roboto', sans-serif;
+
+/*Cores Principais*/
+$colorMainOne: #330136;
+$colorMainTwo: #5e1742;
+$colorMainThree: #962e40;
+$colorMainFour: #c9463d;
+$colorMainFive: #ff5e35; 
+$colorBackgound: #5F1842;
+
+/*Cores Neutras*/
+$colorNeutralOne: #d9d9d9;
+$colorNeutralTwo: #a6a6a6; 
+$colorNeutralThree: #737373;
+$colorNeutralFour: #404040; 
+$colorNeutralFive: #262626;
+
+/*----------------------------------*/
+
+$backGroundColor: $colorNeutralFive;
+
+/*BREAK POINTS*/
+
+// Exemplo de uso:  @media #{$BREAKPOINT-DESK}
+$BREAKPOINT-DESK: "only screen and (max-width: 1280px)";
+$BREAKPOINT-TABLET-LAND: "only screen and (max-width: 975px)";
+$BREAKPOINT-TABLET: "only screen and (max-width: 600px)";
+$BREAKPOINT-MOBILE-LAND: "only screen and (max-width: 480px)";
+
+
+/*MIXINS*/
+
+@mixin margin-page {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  
+    @media #{$BREAKPOINT-DESK} {
+      max-width: 1060px;
+    }
+  }

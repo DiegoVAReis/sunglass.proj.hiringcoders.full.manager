@@ -1,0 +1,19 @@
+//General Conf / Vars / Fonts
+@import "./commons/_conf.scss";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100;200;300;500&family=Roboto&display=swap');
+@import "./commons/_global.scss";
+
+//Components............................//
+@import "../../views/components/Footer/styles.scss";
+@import "../../views/components/Menu/styles.scss";
+@import "../../views/components/SideBar/styles.scss";
+
+//Pages.................................//
+@import "../../views/pages/Login/styles.scss";
+@import "../../views/pages/Dashboard/styles.scss";
+@import "../../views/pages/RegisterClient/styles.scss";
+@import "../../views/pages/RegisterProduct/styles.scss";
+@import "../../views/pages/ClientList/styles.scss";
+@import "../../views/pages/ProductList/styles.scss";
+@import "../../views/pages/Error/styles.scss";
+
