@@ -13,9 +13,9 @@ export default function Footer(){
 
                 <div id="footer-conect" className="text-footer">
                     <ul>
-                        <li><a href="https://br.linkedin.com/in/diego-reis-86211691" target="_blank">Linkedin | <span
+                        <li><a href="https://br.linkedin.com/in/diego-reis-86211691" target="_blank" rel="noreferrer">Linkedin | <span
                                     id="logo-linkedin"></span></a></li>
-                        <li><a href="https://github.com/DiegoVAReis" target="_blank">GitHub | <span
+                        <li><a href="https://github.com/DiegoVAReis" target="_blank" rel="noreferrer">GitHub | <span
                                     id="logo-github"></span></a></li>
                     </ul>
                 </div>
@@ -24,7 +24,7 @@ export default function Footer(){
 
             <div id="footer-copyright">
                 <p>Todos os direitos reservados. Desenvolvido por <a href="https://github.com/DiegoVAReis"
-                    target="_blank">Diego Reis</a></p>
+                    target="_blank" rel="noreferrer">Diego Reis</a></p>
             </div>
         </footer>
     )

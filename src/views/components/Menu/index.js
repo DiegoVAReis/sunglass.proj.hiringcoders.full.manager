@@ -7,10 +7,10 @@ export default function Menu(){
                 <div className="header-content">
 
                     <div id="logo">
-                        <a href="#" title="SunGlass">
+                        <Link title="SunGlass" to="/">
                             <span className="part-one">Sun</span>
                             <span className="part-two">Glass</span >
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="menu-section">

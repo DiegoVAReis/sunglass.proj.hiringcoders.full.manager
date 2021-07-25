@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 //import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import Menu from '../../components/Menu';
@@ -23,9 +23,9 @@ export default function RegisterClient({ history }){
         event.preventDefault();
 
 
-        if ((nomePerson != '') 
-            && (cpfPerson != '')
-            && (emailPerson != '')){
+        if ((nomePerson !== '') 
+            && (cpfPerson !== '')
+            && (emailPerson !== '')){
 
                 const user_login_cadastro = localStorage.getItem('user');
                 const id_registro = Math.random().toString(16).slice(2)
