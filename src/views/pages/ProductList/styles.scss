@@ -21,6 +21,28 @@
             color: $colorNeutralFour;
         }
 
+        & .btn-novo-cadastro {
+            
+            width: 240px;
+            height: 47px;
+            border-radius: 16px;
+            background: $colorMainTwo;
+            color: #ffffff;
+            font-family: $fontFamilyPrimary;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 4.7rem;  
+            align-self: flex-end;           
+            text-decoration: none;
+            text-align: center;
+
+            &:hover{
+                background: $colorMainFour;
+                cursor: pointer;
+            }
+            
+        }
+
         & .box-form {
             width: 100%;
             min-height: 200px;

@@ -25,8 +25,154 @@
             width: 100%;
             min-height: 200px;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
+
+            & .msg-retorno-off {                
+                display: none;
+            }
+
+            & .msg-retorno-on {
+                background: $colorMainTwo;
+                color: $colorNeutralOne;
+                font-family: $fontFamilyTertiary;
+                font-size: 1.8rem;
+                font-weight: 300;
+                padding: 15px;
+                width: 100%;
+            }
+
+            & .form-register {
+
+                width: 100%;
+                //padding: 30px 15px 20px 15px;
+                margin-top: 10px;
+                background: $colorNeutralOne;
+                
+                display: flex;
+                flex-direction: column;
+                
+                & fieldset {
+                    border: 1px solid $colorNeutralTwo;
+                    font-family: $fontFamilyTertiary;
+                    font-size: 1.6rem;
+                    color: $colorNeutralThree;
+                    padding: 20px 20px;
+                    margin-bottom: 20px;
+
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                
+                    & .form-group {
+                        border-radius: 1rem;   
+                        background: #ffffff; 
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 15px;
+
+                        & label {
+                            font-family: $fontFamilyPrimary;
+                            font-size: 1rem;
+                            padding: 0 10px;
+                            color: $colorNeutralFour;
+                        }
+
+                        & input[type=text] {
+                            width: 100%;
+                            height: 40px;
+                            
+                            background: #FFF;
+                            font-family: $fontFamilyPrimary;
+                            font-weight: 300;
+                            padding: 0px 20px 0px 5px;
+                            margin: 8px 15px 8px 0px;
+                                           
+                            &:active {
+                              border: none;
+                            }
+                
+                            &:focus {
+                              outline: none;
+                            }
+                        }
+                        
+                        & input[type=email] {
+                            width: 100%;
+                            height: 40px;
+                            border-radius: 1rem;
+                            background: #ececec;
+                            font-family: $fontFamilyPrimary;
+                            font-weight: 300;
+                            padding: 0px 20px 0px 20px;
+                            margin: 8px 15px 8px 0px;
+                
+                            &:active {
+                              border: none;
+                            }
+                
+                            &:focus {
+                              outline: none;
+                            }
+                        }
+                    }
+                    
+                    & .form-group-big {
+                        width: 100%;
+                    }
+
+                    & .form-group-medium {
+                        width: 48%;
+
+                        @media #{$BREAKPOINT-DESK} {
+                            width: 100%;
+                        }
+                    }
+
+                    & .form-group-small {
+                        width: 48%;
+
+                        @media #{$BREAKPOINT-DESK} {
+                            width: 100%;
+                        }
+                    }
+
+                    @media #{$BREAKPOINT-TABLET-LAND} {
+                        flex-direction: column;
+                    }
+                }
+
+                & .btn {
+                    width: 30%;
+                    height: 47px;
+                    border-radius: 16px;
+                    background: $colorMainTwo;
+                    color: #ffffff;
+                    font-family: $fontFamilyPrimary;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 4.7rem;  
+                    align-self: flex-end;           
+                    
+                    &:hover{
+                        background: $colorMainFour;
+                        cursor: pointer;
+                    }
+    
+                }
+    
+                & span {
+                    font-family: $fontFamilyPrimary;
+                    font-size: 1.2rem;
+                    color: $colorMainOne;
+                    text-align: center;
+                }
+    
+            }
 
         }
 
