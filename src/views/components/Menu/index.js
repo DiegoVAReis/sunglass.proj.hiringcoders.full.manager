@@ -5,8 +5,9 @@ export default function Menu(){
 
     const [menuOpen, setMenuOpen] = useState(false)
 
-    const handleToggle = () => {
-        setMenuOpen(!menuOpen)
+    const handleToggle = () => {        
+        document.body.style.overflow = menuOpen ? "initial" : "hidden"
+        setMenuOpen(!menuOpen)        
     }
 
     return (
