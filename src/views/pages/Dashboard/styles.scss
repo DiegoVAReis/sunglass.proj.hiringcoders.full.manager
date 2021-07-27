@@ -42,6 +42,7 @@
                 background: $colorMainTwo;  
 
                 @media #{$BREAKPOINT-TABLET-LAND} {
+                    margin-top: 20px;
                     width: 100%;
                 }
             }

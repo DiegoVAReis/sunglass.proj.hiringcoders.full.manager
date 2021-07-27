@@ -81,7 +81,7 @@ header {
         .menu-toggle {
             width: 40px;
             height: 30px;
-            margin-right: 20px;
+            //margin-right: 20px;
         }
         
         .menu-section.on {
@@ -125,7 +125,7 @@ header {
         
         .menu-section.on nav ul {
             text-align: center;
-            display: block;
+            display: block;            
         }
         
         .menu-section.on nav ul a{
@@ -133,6 +133,8 @@ header {
             font-size: 3rem;
             line-height: 4rem;
             display: block;
+            padding: 2.4rem 0 2.4rem 0;
+            text-align: center;
             
         }
 

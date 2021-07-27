@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Menu(){    
+
+    const [menuOpen, setMenuOpen] = useState(false)
+
+    const handleToggle = () => {
+        setMenuOpen(!menuOpen)
+    }
+
     return (
             <header>
                 <div className="header-content">
@@ -13,8 +20,8 @@ export default function Menu(){
                         </Link>
                     </div>
 
-                    <div className="menu-section">
-                        <div className="menu-toggle">
+                    <div className={menuOpen ? 'menu-section on' : 'menu-section'}>
+                        <div className="menu-toggle" onClick={handleToggle}>
                             <div className="one"></div>
                             <div className="two"></div>
                             <div className="three"></div>
