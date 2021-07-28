@@ -1,13 +1,18 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Menu(){    
+export default function Menu({ history }){    
 
     const [menuOpen, setMenuOpen] = useState(false)
 
     const handleToggle = () => {        
         document.body.style.overflow = menuOpen ? "initial" : "hidden"
         setMenuOpen(!menuOpen)        
+    }
+
+    async function Logout(){        
+        handleToggle();
+        localStorage.clear();
     }
 
     return (
@@ -30,10 +35,10 @@ export default function Menu(){
                         <nav>
                             <ul className="menu-list">
                                 <li>
-                                   <Link className="menu-item" to="/">Log Out</Link>
+                                   <Link className="menu-item" onClick={Logout} to="/login">Log Out</Link>
                                 </li>
                                 <li>
-                                    <Link className="menu-item" to="/dashboard">Home</Link>
+                                    <Link className="menu-item" onClick={handleToggle} to="/dashboard">Home</Link>
                                 </li>
                             </ul>
                         </nav>

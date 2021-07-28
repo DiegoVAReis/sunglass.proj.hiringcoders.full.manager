@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function SideBar(){  
     
@@ -30,14 +31,24 @@ export default function SideBar(){
                     <nav>
                         <ul className="menu-list">
                             <li>
-                                <Link className="menu-item" to="/dashboard">» Dashboard</Link>
+                                <Link className="menu-item" to="/dashboard">Dashboard</Link>
                             </li>
                             <li>
-                                <Link className="menu-item" to="/clientes">» Clientes</Link>
+                                <Link className="menu-item" to="/clientes">Clientes</Link>
                             </li>
                             <li>
-                                <Link className="menu-item" to="/produtos">» Produtos</Link>
+                                <Link className="menu-item" to="/produtos">Produtos</Link>
                             </li>
+
+                            {/* <li>
+                                <Link className="menu-item" to="/dashboard"><FontAwesomeIcon icon={['fab', 'google']} /> Dashboard</Link>
+                            </li>
+                            <li>
+                                <Link className="menu-item" to="/clientes"><FontAwesomeIcon icon="spinner" pulse /> Clientes</Link>
+                            </li>
+                            <li>
+                                <Link className="menu-item" to="/produtos"><FontAwesomeIcon icon={['fab', 'google']}/> Produtos</Link>
+                            </li> */}
                         </ul>
                     </nav>
                 </div>
